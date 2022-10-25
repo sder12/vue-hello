@@ -20,7 +20,7 @@ createApp({
         }
     },
     methods: {
-        print: function printPh() {
+        print: function() {
             this.displayInput = "hidden";
             this.displayOutput = "";
         }
