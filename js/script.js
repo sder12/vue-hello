@@ -13,6 +13,16 @@ createApp({
             classImg: "img-unsplash",
             srcImg: "https://source.unsplash.com/random/900×700/?fruit",
             altText: "Fruits img published by unsplash",
+            phName: "",
+            phSurname: "",
+            displayInput:"",
+            displayOutput: "hidden",
+        }
+    },
+    methods: {
+        print : function printPh(){
+            this.displayInput = "hidden";
+            this.displayOutput = "";
         }
     }
 }).mount("#app")
