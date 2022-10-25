@@ -13,15 +13,35 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="container">
         <!-- vue div -->
         <div id="app">
-            <!-- Title -->
-            <h1>{{titleUnsplash}}</h1>
-            <p>PH: {{userName}}</p>
-            <!-- Images -->
-            <div :class="classImg">
-               <img :src="srcImg" :alt="altText">
+            <div class="wrapper">
+                <!-- Title -->
+                <h1>{{titleUnsplash}}</h1>
+
+                <div class="output-img" :class="displayOutput">
+                    <span>Photographer - {{phName}} {{phSurname}}</span>
+                </div>
+
+                <!-- Input -->
+                <div class="input-img" :class="displayInput">
+                    <!-- Name -->
+                    <label for="ph-name">Nome:</label>
+                    <input type="text" id="ph-name" v-model="phName">
+                    <!-- Surname -->
+                    <label for="ph-surname">Cognome:</label>
+                    <input type="text" id="ph-surname" v-model="phSurname">
+                    <!-- Print -->
+                    <button @click="print">Print</button>
+                </div>
+
+                <!-- Images -->
+                <div :class="classImg">
+                    <img :src="srcImg" :alt="altText">
+                </div>
+
+
             </div>
         </div>
     </div>

@@ -1,28 +1,54 @@
-.wrapper{
+.container {
     display: flex;
     justify-content: center;
 }
 
-.wrapper > div{
-    margin: 100px;
-    height: 500px;
-    width: 700px;
+.wrapper {
+    margin: 50px;
+    padding: 10px 0 0;
+    width: 800px;
     background-color: rgb(0, 0, 0);
     text-align: center;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
-h1, p{
+html {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-.img-unsplash{
-    width: 100%;
-    height: 80%;
+.input-img,
+.output-img {
+    height: 50px;
+    /* border: 1px solid white; */
 }
-.img-unsplash img{
+
+.input-img label,
+.input-img button {
+    margin: 10px;
+}
+
+.output-img span {
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.img-unsplash {
+    width: 100%;
+    height: 500px;
+
+}
+
+.img-unsplash img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+}
+
+.hidden {
+    display: none;
 }

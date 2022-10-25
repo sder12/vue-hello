@@ -15,12 +15,12 @@ createApp({
             altText: "Fruits img published by unsplash",
             phName: "",
             phSurname: "",
-            displayInput:"",
+            displayInput: "",
             displayOutput: "hidden",
         }
     },
     methods: {
-        print : function printPh(){
+        print: function printPh() {
             this.displayInput = "hidden";
             this.displayOutput = "";
         }
